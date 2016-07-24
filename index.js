@@ -1,8 +1,7 @@
 "use strict";
 
 module.exports = function (array, arrays) {
-  var combined = Array.prototype.slice.call(arguments)
-  return recursive_flatten(combined)
+  return recursive_flatten(Array.prototype.slice.call(arguments))
 }
 
 var recursive_flatten = function (array) {
