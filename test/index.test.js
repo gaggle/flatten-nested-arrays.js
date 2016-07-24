@@ -3,11 +3,11 @@ var expect = require("chai").expect
 var flatten = require("../")
 
 describe("flatten", function () {
-  it("should return a non-nested array", function () {
-    expect(flatten([1])).to.eql([1])
+  it("should return empty if called naked", function () {
+    expect(flatten()).to.eql([])
   })
 
-  it("should accept multiple array args", function () {
+  it("should combine non-nested array", function () {
     expect(flatten([1], [2])).to.eql([1, 2])
   })
 
