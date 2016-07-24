@@ -4,7 +4,8 @@
   "description": "flatten arbitrarily nested arrays",
   "main": "index.js",
   "scripts": {
-    "test": "istanbul --include-all-sources cover _mocha --dir .coverage -- -R spec"
+    "test": "istanbul --include-all-sources cover _mocha --dir .coverage -- -R spec",
+    "test:ci": "istanbul --include-all-sources cover _mocha --report lcovonly -- -R spec"
   },
   "dependencies": {},
   "devDependencies": {
