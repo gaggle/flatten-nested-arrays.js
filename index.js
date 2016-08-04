@@ -1,7 +1,7 @@
 "use strict";
 
-const recursiveFlatten = function (array) {
-  return array.reduce(function (res, e) {
+const recursiveFlatten = (array) => {
+  return array.reduce((res, e) => {
     Array.isArray(e) ? res.push(...recursiveFlatten(e)) : res.push(e)
     return res
   }, [])
