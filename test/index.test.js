@@ -3,6 +3,14 @@ const expect = require("chai").expect
 const flatten = require("../")
 
 describe("flatten", function () {
+  it("should throw if called with null", function () {
+    expect(() => flatten(null)).to.throw()
+  })
+
+  it("should throw if called with undefined", function () {
+    expect(() => flatten(undefined)).to.throw()
+  })
+
   it("should return empty if called with empty", function () {
     expect(flatten([])).to.eql([])
   })
