@@ -1,15 +1,10 @@
 "use strict";
 
 const recursiveFlatten = function (array) {
-  const res = []
-  for (let e of array) {
-    if (Array.isArray(e)) {
-      res.push(...recursiveFlatten(e))
-      continue
-    }
-    res.push(e)
-  }
-  return res
+  return array.reduce(function (res, e) {
+    Array.isArray(e) ? res.push(...recursiveFlatten(e)) : res.push(e)
+    return res
+  }, [])
 }
 
 /**
