@@ -13,7 +13,7 @@ var recursiveFlatten = function (array) {
 }
 
 /**
- * Flatten all the elements.
+ * Flatten all the elements of array.
  * E.g. [1, [2, [3] ], 4] -> [1, 2, 3, 4]
  *
  * @param {Array} array
