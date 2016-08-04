@@ -1,6 +1,6 @@
 "use strict";
-var expect = require("chai").expect
-var flatten = require("../")
+const expect = require("chai").expect
+const flatten = require("../")
 
 describe("flatten", function () {
   it("should return empty if called with empty", function () {
@@ -12,7 +12,7 @@ describe("flatten", function () {
   })
 
   it("should flatten array per specifications", function () {
-    var res = flatten([1, [2, [3]], 4])
+    const res = flatten([1, [2, [3]], 4])
     expect(res).to.eql([1, 2, 3, 4])
   })
 })
