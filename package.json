@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "istanbul --include-all-sources cover _mocha --dir .coverage -- -R spec",
-    "test:ci": "istanbul --include-all-sources cover _mocha --dir .coverage --report lcovonly -- -R spec && cat ./.coverage/lcov.info | tee >(./node_modules/coveralls/bin/coveralls.js) >(./node_modules/.bin/codacy-coverage) | rm -rf ./coverage"
+    "test:ci": "istanbul --include-all-sources cover _mocha --dir .coverage --report lcovonly -- -R spec && cat ./.coverage/lcov.info | tee >./node_modules/coveralls/bin/coveralls.js >./node_modules/.bin/codacy-coverage | rm -rf ./coverage"
   },
   "dependencies": {},
   "devDependencies": {
