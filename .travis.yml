@@ -1,8 +1,12 @@
 language: node_js
 node_js:
-  - "node"
+  - node
 cache:
   directories:
     - node_modules
 script:
-  - npm run test:ci
+  - 'npm run test:ci'
+env:
+  global:
+    - secure: >-
+        uH7tFhrRVFq8vBtNASMHmCjQj6WISgWY2RPtCu1Goz7ZLE0mbvr24htf2RKLBaf3VxYHy7ZEYltLx6JtH82wNx1u+vBKaGJZP1GqXnuO+r06HXobU7WJ7Jl2a0kHRsbkEClYj+KDmuUymLfk0rHVCh1FTGb3XxmOMN2HPpU3HvIQWq8nXPd+WFKHhS6cs+8Rw1DtE/lJXC2eM+GBrLanQQF49pe9sTrwmWIqmgSeqzeJt0NWfbFwYYEDj/HupY3dkrLClKM+URZ0kIZXqmn31Q95B82Scv/3ch0I+3Nrw/ySCwUqox4W5XT4FA+mpyPUI6jE8WKmQalW2kb0joFebhWg1kCWixoY0gOAj9wKmGD7A2mFBObehtOXD1yorpqvv4PMoyx+FjM9UpkY2rBfjL126BQdBTEW4ONiAQ2uvY7V6zZR7VY7B6Ct6YkfS/Fm3KPeLRiJVR6Vqi764PTSQ8u59X5+5sDachLe4dvTOyZJEqn4kyYSW7qvkfEWpMDnJYJ/nBd0vU4iSuU3qUrJq+oYV0taTvIA4XbLiEnzp55xZKucbTseIlt0pQnjbsXguddezToJlBiuhpEfFSZPQPxokP9OlUkdqS0pIoZKiAsxAXayuz/vBh2ck9S6pq3iEUx4sHvnGHy6oYXaCLePbdDbuaS5gjEjRpLS8T3/y74=
